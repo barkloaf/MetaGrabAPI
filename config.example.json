@@ -1,0 +1,9 @@
+{
+    "id": "",
+    "secret": "",
+    "searchLimit": "6",
+
+    "rateLimit": 1,
+    "rateBucket": 6,
+    "bindAddress": ""
+}
