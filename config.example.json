@@ -1,7 +1,7 @@
 {
     "id": "",
     "secret": "",
-    "searchLimit": "6",
+    "searchLimit": 5,
 
     "rateLimit": 1,
     "rateBucket": 6,
