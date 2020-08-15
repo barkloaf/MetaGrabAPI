@@ -567,10 +567,12 @@ Here is an example JSON served by this endpoint with the query `bark` and a maxi
                         "uri":"spotify:artist:6TIYQ3jFPwQSRmorSezPxX"
                     },
                     {
-                        "name":"YUNGBLUD","uri":"spotify:artist:6Ad91Jof8Niiw0lGLLi3NW"
+                        "name":"YUNGBLUD",
+			"uri":"spotify:artist:6Ad91Jof8Niiw0lGLLi3NW"
                     },
                     {
-                        "name":"Travis Barker","uri":"spotify:artist:4exLIFE8sISLr28sqG1qNX"
+                        "name":"Travis Barker",
+			"uri":"spotify:artist:4exLIFE8sISLr28sqG1qNX"
                     }
                 ],
                 "explicit":true,
