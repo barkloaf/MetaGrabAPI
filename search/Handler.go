@@ -17,7 +17,7 @@ func Handler(writer http.ResponseWriter, request *http.Request) {
 		return
 	}
 
-	writer.Header().Set("Access-Control-Allow-Origin", "*")
+	writer.Header().Set("Access-Control-Allow-Origin", misc.Config.AccessControl)
 
 	search, err := GetSearch(client, token, request.URL.RawQuery, misc.Config.SearchLimit)
 	if err != nil {
