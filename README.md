@@ -618,4 +618,4 @@ There are a number of things shipped by the Spotify API that is not covered with
   * `tatums`
 
 ## License Notice
-Make sure any and all use of this software complies with the [license](https://github.com/barkloaf/SpotGrabAPI/blob/master/LICENSE), the GNU Afferro General Public License v3.0
+Make sure any and all use of this software complies with the [license](https://github.com/barkloaf/SpotGrabAPI/blob/master/LICENSE), the GNU Affero General Public License v3.0
