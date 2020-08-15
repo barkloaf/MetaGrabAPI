@@ -19,7 +19,7 @@
   - [License Notice](#license-notice)
 
 ## Introduction
-This is the API used by my other project, [SpotGrab](https://github.com/barkloaf/spotGrab). It's written in Go and grabs Spotify's metadata about any track on its platform. Metadata is data about other data. Track metadata can include artists, what album the track appeared on, and the qualitative feel of the track.
+This is the API used by my other project, [SpotGrab](https://github.com/barkloaf/SpotGrab). It's written in Go and grabs Spotify's metadata about any track on its platform. Metadata is data about other data. Track metadata can include artists, what album the track appeared on, and the qualitative feel of the track.
 
 ## Configuration
 [config.example.json](https://github.com/barkloaf/SpotGrabAPI/blob/master/config.example.json) is an example for the config that then becomes `config.json`. The config becomes a struct as such:
