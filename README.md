@@ -22,7 +22,7 @@
 This is the API used by my other project, [SpotGrab](https://github.com/barkloaf/spotGrab). It's written in Go and grabs Spotify's metadata about any track on its platform. Metadata is data about other data. Track metadata can include artists, what album the track appeared on, and the qualitative feel of the track.
 
 ## Configuration
-[config.example.json](https://github.com/barkloaf/SpotGrabAPI/blob/master/config.example.json) is an example for the config. It becomes a struct as such:
+[config.example.json](https://github.com/barkloaf/SpotGrabAPI/blob/master/config.example.json) is an example for the config that then becomes `config.json`. The config becomes a struct as such:
 ```go
 type Configuration struct {
 	//ID and Secret are strings obtained at https://developer.spotify.com/dashboard/
@@ -608,10 +608,10 @@ There are a number of things shipped by the Spotify API that is not covered with
   * `genres` - Spotify documents that genre is shipped with albums and artists. This, however, is a lie. Genre is only shipped with artists. For obvious reasons (genre diversity), this is ridiculous. It isn't worth the hassle to grab all the potentially misleading genres from all (multiple!) artists from each track, so it is not covered.
   * `href`
   * `tracks`
-* Features
+* Features -
   * `analysis_url`
   * `type`
-* Analysis
+* Analysis -
   * `bars`
   * `beats`
   * `segments`
