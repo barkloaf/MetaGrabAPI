@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/barkloaf/SpotGrabAPI/misc"
-	"github.com/barkloaf/SpotGrabAPI/search"
-	"github.com/barkloaf/SpotGrabAPI/track"
+	"github.com/barkloaf/MetaGrabAPI/misc"
+	"github.com/barkloaf/MetaGrabAPI/search"
+	"github.com/barkloaf/MetaGrabAPI/track"
 )
 
 func main() {

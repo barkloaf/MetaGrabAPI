@@ -26,6 +26,9 @@ type Info struct {
 		URI string `json:"uri"`
 	} `json:"artists"`
 
+	//A list of the countries in which the track can be played, identified by their ISO 3166-1 alpha-2 code.
+	AvailableMarkets []string `json:"available_markets"`
+
 	//Whether or not the track has explicit lyrics (true = yes it does; false = no it does not OR unknown)
 	Explicit bool `json:"explicit"`
 
@@ -49,6 +52,9 @@ type Info struct {
 
 //Album is catalog information for a single album
 type Album struct {
+	//The type of the album: one of "Album", "Single", or "Compilation".
+	Type string `json:"album_type"`
+
 	//The Spotify ID for the album
 	ID string `json:"id"`
 

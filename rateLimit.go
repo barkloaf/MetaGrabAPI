@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/barkloaf/SpotGrabAPI/misc"
+	"github.com/barkloaf/MetaGrabAPI/misc"
 	"golang.org/x/time/rate"
 )
 

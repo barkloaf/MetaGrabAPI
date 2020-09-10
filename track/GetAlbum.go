@@ -3,9 +3,10 @@ package track
 import (
 	"encoding/json"
 	"net/http"
+	"strings"
 	"time"
 
-	"github.com/barkloaf/SpotGrabAPI/misc"
+	"github.com/barkloaf/MetaGrabAPI/misc"
 )
 
 const (
@@ -53,6 +54,8 @@ func GetAlbum(client *http.Client, token misc.Token, id string) (misc.Album, err
 
 		album.Date = date.Format(dayOutFormat)
 	}
+
+	album.Type = strings.Title(album.Type)
 
 	return album, nil
 }

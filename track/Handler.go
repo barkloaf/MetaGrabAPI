@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/barkloaf/SpotGrabAPI/misc"
+	"github.com/barkloaf/MetaGrabAPI/misc"
 )
 
 //Handler func

@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/barkloaf/SpotGrabAPI/misc"
+	"github.com/barkloaf/MetaGrabAPI/misc"
 )
 
 //GetSearch func

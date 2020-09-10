@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/barkloaf/SpotGrabAPI/misc"
+	"github.com/barkloaf/MetaGrabAPI/misc"
 )
 
 //GetFeatures func
