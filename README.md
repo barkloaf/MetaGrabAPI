@@ -243,6 +243,9 @@ Here is an example JSON served by this endpoint with the ID `0g5J7GjfRxsunVrrcDL
                 "uri":"spotify:artist:73aRlPLCZSv6wlTUUK0aFP"
             }
         ],
+        "available_markets": [
+            "AD","AE","AL","AR","AT","AU","BA","BE","BG","BH","BO","BR","BY","CA","CH","CL","CO","CR","CY","CZ","DE","DK","DO","DZ","EC","EE","EG","ES","FI","FR","GB","GR","GT","HK","HN","HR","HU","ID","IE","IL","IN","IS","IT","JO","JP","KW","KZ","LB","LI","LT","LU","LV","MA","MC","MD","ME","MK","MT","MX","MY","NI","NL","NO","NZ","OM","PA","PE","PH","PL","PS","PT","PY","QA","RO","RS","RU","SA","SE","SG","SI","SK","SV","TH","TN","TR","TW","UA","US","UY","VN","XK","ZA"
+        ],
         "explicit":false,
         "id":"0g5J7GjfRxsunVrrcDLejQ",
         "name":"Mama Told Me - Original Mix",
@@ -252,6 +255,7 @@ Here is an example JSON served by this endpoint with the ID `0g5J7GjfRxsunVrrcDL
         },
 
     "Album": {
+        "album_type":"Single",
         "id":"2TIcThPVCssqowwlTKYEpv",
         "images": [
             {
@@ -515,6 +519,9 @@ Here is an example JSON served by this endpoint with the query `bark` and a maxi
                         "name":"Ozzy Osbourne","uri":"spotify:artist:6ZLTlhejhndI4Rh53vYhrY"
                     }
                 ],
+                "available_markets": [
+                    "AD","AE","AL","AR","AT","AU","BA","BE","BG","BH","BO","BR","BY","CA","CH","CL","CO","CR","CY","CZ","DE","DK","DO","DZ","EC","EE","EG","ES","FI","FR","GB","GR","GT","HK","HN","HR","HU","ID","IE","IL","IN","IS","IT","JO","JP","KW","KZ","LB","LI","LT","LU","LV","MA","MC","MD","ME","MK","MT","MX","MY","NI","NL","NO","NZ","OM","PA","PE","PH","PL","PS","PT","PY","QA","RO","RS","RU","SA","SE","SG","SI","SK","SV","TH","TN","TR","TW","UA","US","UY","VN","XK","ZA"
+                ],
                 "explicit":false,
                 "id":"2E7W1X4maFFcjHrVrFA7Vs",
                 "name":"Bark at the Moon",
@@ -543,6 +550,9 @@ Here is an example JSON served by this endpoint with the query `bark` and a maxi
                         "name":"Ramz",
                         "uri":"spotify:artist:6ywXRaHY7m2DJ0dd7CsLAB"
                     }
+                ],
+                "available_markets": [
+                    "AD","AE","AL","AR","AT","AU","BA","BE","BG","BH","BO","BR","BY","CA","CH","CL","CO","CR","CY","CZ","DE","DK","DO","DZ","EC","EE","EG","ES","FI","FR","GB","GR","GT","HK","HN","HR","HU","ID","IE","IL","IN","IS","IT","JO","JP","KW","KZ","LB","LI","LT","LU","LV","MA","MC","MD","ME","MK","MT","MX","MY","NI","NL","NO","NZ","OM","PA","PE","PH","PL","PS","PT","PY","QA","RO","RS","RU","SA","SE","SG","SI","SK","SV","TH","TN","TR","TW","UA","US","UY","VN","XK","ZA"
                 ],
                 "explicit":false,
                 "id":"2U5cq89GCnsR1yixKkC8d5",
@@ -574,12 +584,15 @@ Here is an example JSON served by this endpoint with the query `bark` and a maxi
                     },
                     {
                         "name":"YUNGBLUD",
-			"uri":"spotify:artist:6Ad91Jof8Niiw0lGLLi3NW"
+			            "uri":"spotify:artist:6Ad91Jof8Niiw0lGLLi3NW"
                     },
                     {
                         "name":"Travis Barker",
-			"uri":"spotify:artist:4exLIFE8sISLr28sqG1qNX"
+			            "uri":"spotify:artist:4exLIFE8sISLr28sqG1qNX"
                     }
+                ],
+                "available_markets": [
+                    "AD","AE","AL","AR","AT","AU","BA","BE","BG","BH","BO","BR","CA","CH","CL","CO","CR","CY","CZ","DE","DK","DO","DZ","EC","EE","EG","ES","FI","FR","GB","GR","GT","HK","HN","HR","HU","ID","IE","IL","IN","IS","IT","JO","JP","KW","KZ","LB","LI","LT","LU","LV","MA","MC","MD","ME","MK","MT","MX","MY","NI","NL","NO","NZ","OM","PA","PE","PH","PL","PS","PT","PY","QA","RO","RS","RU","SA","SE","SG","SI","SK","SV","TH","TN","TR","TW","UA","US","UY","VN","XK","ZA"
                 ],
                 "explicit":true,
                 "id":"2gTdDMpNxIRFSiu7HutMCg",
