@@ -15,4 +15,4 @@
 # vendor/
 
 #Config files
-config.json
+.env

@@ -51,14 +51,14 @@ func (lim *ipRateLimiter) getLimiter(ip string) *rate.Limiter {
 	return limiter
 }
 
-var limiter = newIPRateLimiter(misc.Config.RateLimit, misc.Config.RateBucket)
+var limiter = newIPRateLimiter(rate.Every(misc.Config.RateLimit), misc.Config.RateBucket)
 
 func rateLimit(handler http.Handler) http.Handler {
 	return http.HandlerFunc(func(writer http.ResponseWriter, request *http.Request) {
 		limiter := limiter.getLimiter(request.RemoteAddr)
 
 		if !limiter.Allow() {
-			http.Error(writer, http.StatusText(429), 429)
+			http.Error(writer, http.StatusText(http.StatusTooManyRequests), http.StatusTooManyRequests)
 			return
 		}
 

@@ -25,22 +25,22 @@ This is the API used by my other project, [MetaGrab](https://github.com/barkloaf
 [config.example.json](https://github.com/barkloaf/MetaGrabAPI/blob/master/config.example.json) is an example for the config that then becomes `config.json`. The config becomes a struct as such:
 ```go
 type Configuration struct {
-	//ID and Secret are strings obtained at https://developer.spotify.com/dashboard/
-	ID            string     `json:"id"`
-	Secret        string     `json:"secret"`
+	//ID and Secret are obtained at https://developer.spotify.com/dashboard/
+	ID     string // ID
+	Secret string // SECRET
 
 	//SearchLimit is an integer that sets the maximum number of search results (type misc.Search) given by the search.GetSearch function
-	SearchLimit   int        `json:"searchLimit"`
+	SearchLimit int // SEARCH_LIMIT
 
-	//RateBucket is an integer size of the bucket filled at the rate defined by RateLimit, for use for the ratelimit middleware functionality
-	RateLimit     rate.Limit `json:"rateLimit"`
-	RateBucket    int        `json:"rateBucket"`
+	//RateBucket is the size of the bucket filled at the rate defined by RateLimit, for use for the ratelimit middleware functionality
+	RateLimit  time.Duration // RATE_LIMIT
+	RateBucket int           // RATE_BUCKET
 
-	//BindAddress is the address string in which the API is hosted 
-	BindAddress   string     `json:"bindAddress"`
+	//BindAddress is the address in which the API is hosted
+	BindAddress string // BIND_ADDRESS
 
-	//AccessControl is the domain string that all API access is restricted to in the Access-Control-Allow-Origin header
-	AccessControl string     `json:"accessControl"`
+	//AccessControl is a domain that all API access is restricted to in the Access-Control-Allow-Origin header
+	AccessControl string // ACCESS_CONTROL
 }
 ```
 ## Endpoints
