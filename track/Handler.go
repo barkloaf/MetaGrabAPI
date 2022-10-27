@@ -8,7 +8,7 @@ import (
 	"github.com/barkloaf/MetaGrabAPI/misc"
 )
 
-//Handler func
+// Handler func
 func Handler(writer http.ResponseWriter, request *http.Request) {
 	client, token, err := misc.Auth(misc.Config.ID, misc.Config.Secret)
 	if err != nil {
@@ -29,6 +29,11 @@ func Handler(writer http.ResponseWriter, request *http.Request) {
 	if err != nil {
 		fmt.Println(err)
 		http.Error(writer, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
+		return
+	}
+
+	if info.ID == "" {
+		http.Error(writer, http.StatusText(http.StatusNotFound), http.StatusNotFound)
 		return
 	}
 
