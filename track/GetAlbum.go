@@ -3,10 +3,11 @@ package track
 import (
 	"encoding/json"
 	"net/http"
-	"strings"
 	"time"
 
 	"github.com/barkloaf/MetaGrabAPI/misc"
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
 )
 
 const (
@@ -17,7 +18,7 @@ const (
 	monthOutFormat = "Jan-2006"
 )
 
-//GetAlbum func
+// GetAlbum func
 func GetAlbum(client *http.Client, token misc.Token, id string) (misc.Album, error) {
 	get, err := http.NewRequest("GET", "https://api.spotify.com/v1/albums/"+id, nil)
 	if err != nil {
@@ -55,7 +56,8 @@ func GetAlbum(client *http.Client, token misc.Token, id string) (misc.Album, err
 		album.Date = date.Format(dayOutFormat)
 	}
 
-	album.Type = strings.Title(album.Type)
+	caser := cases.Title(language.English)
+	album.Type = caser.String(album.Type)
 
 	return album, nil
 }
