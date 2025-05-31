@@ -14,7 +14,7 @@ Other databases for music analysis (often much more accurate than Spotify):
 <hr />
 <p align="center">
   <a href="https://metagrab.barkloaf.com">
-    <img src="https://metagrab.barkloaf.com/logo.png" width="300" />
+    <img src="https://github.com/barkloaf/MetaGrab/blob/master/public/logo.png" width="300" />
   </a>
 </p>
 
